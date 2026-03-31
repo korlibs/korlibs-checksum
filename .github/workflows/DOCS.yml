@@ -38,5 +38,5 @@ jobs:
       - { name: Prepare Gradle, uses: gradle/actions/setup-gradle@v4 }
       - { name: Initialize Gradle, run: ./gradlew --no-configuration-cache }
       - { name: Build Documentation, run: ./gradlew --no-configuration-cache dokkaGenerateHtml }
-      - { name: Upload artifact, uses: actions/upload-pages-artifact@v4, with: { path: 'build/dokka/html' } }
+      - { name: Upload artifact, uses: actions/upload-pages-artifact@v4, with: { path: 'korlibs-checksum/build/dokka/html' } }
       - { name: Deploy 🚀 to GitHub Pages, id: deployment, uses: actions/deploy-pages@v5 }
