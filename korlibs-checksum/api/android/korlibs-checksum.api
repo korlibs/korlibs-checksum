@@ -13,6 +13,7 @@ public final class korlibs/io/util/checksum/CRC32 : korlibs/io/util/checksum/Sim
 public abstract interface class korlibs/io/util/checksum/SimpleChecksum {
 	public abstract fun getInitialValue ()I
 	public abstract fun update (I[BII)I
+	public static synthetic fun update$default (Lkorlibs/io/util/checksum/SimpleChecksum;I[BIIILjava/lang/Object;)I
 }
 
 public final class korlibs/io/util/checksum/SimpleChecksum$DefaultImpls {
